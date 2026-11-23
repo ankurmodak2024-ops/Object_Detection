@@ -1,0 +1,384 @@
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 22px 8%;
+    background: #101a2b;
+    border-bottom: 1px solid #202c40;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #26d9b1;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #b8c2d3;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #26d9b1;
+}
+
+/* TECHNOLOGY HERO */
+
+.technology-hero {
+    text-align: center;
+    padding: 85px 20px;
+    background: linear-gradient(135deg, #080d18, #101e30);
+}
+
+.tech-tag,
+.small-title {
+    color: #26d9b1;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.technology-hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.technology-hero h1 span {
+    color: #26d9b1;
+}
+
+.technology-hero p {
+    color: #aab5c5;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* INTRODUCTION */
+
+.tech-intro {
+    width: 85%;
+    max-width: 1150px;
+    margin: 75px auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.tech-intro-text h2 {
+    font-size: 32px;
+    margin: 18px 0;
+    line-height: 1.4;
+}
+
+.tech-intro-text p {
+    color: #aab5c5;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.tech-intro-box {
+    background: #101a2b;
+    border: 1px solid #26d9b1;
+    border-radius: 15px;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tech-symbol {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 25px;
+    border: 2px solid #26d9b1;
+    border-radius: 50%;
+    color: #26d9b1;
+    font-size: 42px;
+    font-weight: bold;
+    box-shadow: 0 0 30px rgba(38, 217, 177, 0.15);
+}
+
+.tech-intro-box h3 {
+    margin-bottom: 12px;
+}
+
+.tech-intro-box p {
+    color: #aab5c5;
+}
+
+
+/* TECHNOLOGY STACK */
+
+.tech-stack {
+    background: #101a2b;
+    padding: 80px 8%;
+}
+
+.tech-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.tech-heading h2 {
+    font-size: 32px;
+    margin: 18px 0;
+}
+
+.tech-heading p {
+    color: #aab5c5;
+    line-height: 1.7;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.tech-card {
+    position: relative;
+    background: #17243a;
+    border: 1px solid #26344a;
+    border-radius: 12px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.tech-card:hover {
+    border-color: #26d9b1;
+    transform: translateY(-6px);
+}
+
+.tech-number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    color: #526178;
+    font-size: 14px;
+}
+
+.tech-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.python-icon {
+    background: #263e55;
+    color: #ffd166;
+}
+
+.yolo-icon {
+    background: #293b4a;
+    color: #26d9b1;
+    font-size: 18px;
+}
+
+.opencv-icon {
+    background: #263e55;
+    color: #26d9b1;
+}
+
+.flask-icon {
+    background: #293344;
+    color: #ffffff;
+}
+
+.html-icon {
+    background: #3a2930;
+    color: #ff815c;
+}
+
+.css-icon {
+    background: #253650;
+    color: #65a9ff;
+}
+
+.tech-card h3 {
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+.tech-card p {
+    color: #aab5c5;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 100px;
+}
+
+.tech-category {
+    display: inline-block;
+    color: #26d9b1;
+    background: rgba(38, 217, 177, 0.08);
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 11px;
+    margin-top: 15px;
+}
+
+
+/* WORKFLOW */
+
+.workflow-section {
+    padding: 80px 8%;
+}
+
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.workflow-card {
+    background: #101a2b;
+    border: 1px solid #26344a;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.workflow-card:hover {
+    border-color: #26d9b1;
+}
+
+.workflow-card span {
+    color: #26d9b1;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.workflow-card h3 {
+    margin: 20px 0 12px;
+    font-size: 17px;
+}
+
+.workflow-card p {
+    color: #aab5c5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* CTA */
+
+.tech-cta {
+    background: #101a2b;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.tech-cta h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.tech-cta p {
+    color: #aab5c5;
+    line-height: 1.8;
+}
+
+.tech-button {
+    display: inline-block;
+    background: #26d9b1;
+    color: #080d18;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 7px;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+.tech-button:hover {
+    background: #19b997;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .tech-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .workflow-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .technology-hero h1 {
+        font-size: 30px;
+    }
+
+    .tech-intro {
+        width: 92%;
+    }
+
+    .tech-grid,
+    .workflow-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-stack,
+    .workflow-section {
+        padding: 55px 6%;
+    }
+
+    .tech-heading h2,
+    .tech-intro-text h2 {
+        font-size: 26px;
+    }
+
+    .tech-card p {
+        min-height: auto;
+    }
+
+}

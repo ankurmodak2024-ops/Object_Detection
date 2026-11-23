@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Live Object Detector | ObjectDetect AI</title>
+      <link rel="stylesheet" href="detector.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <a class="logo logo-link" href="index.html" aria-label="ObjectDetect AI home">
+                Object<span>Detect</span> AI
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="detector.html" class="active">Live Detector</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="technology.html">Technology</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+
+        <span class="tag">AI POWERED TECHNOLOGY</span>
+
+        <h1>Live Object Detection</h1>
+
+        <p>
+            Detect and identify objects in real time using
+            Artificial Intelligence and Computer Vision.
+        </p>
+
+    </section>
+
+
+    <!-- Main Detection Section -->
+    <section class="detector-section">
+
+        <div class="section-heading">
+            <div>
+                <h2>Camera Detection System</h2>
+                <p>Real-time object recognition dashboard</p>
+            </div>
+
+            <div class="status">
+                <span class="status-dot" id="status-dot"></span>
+                <span id="camera-status" role="status" aria-live="polite">Camera off</span>
+            </div>
+        </div>
+
+
+        <!-- Camera Display -->
+        <div class="camera-screen" id="camera-screen">
+            <video id="camera" autoplay playsinline muted></video>
+            <canvas id="detection-overlay" aria-hidden="true"></canvas>
+            <p class="camera-placeholder" id="camera-placeholder">Start the camera to detect objects.</p>
+        </div>
+
+        <div class="camera-controls">
+            <button class="camera-button" id="start-camera" type="button">Open camera</button>
+            <button class="camera-button camera-button-secondary" id="stop-camera" type="button" disabled>Stop camera</button>
+        </div>
+
+        <div class="object-targets">
+            <label for="target-objects">Objects to detect</label>
+            <input id="target-objects" type="text" value="phone, pen" maxlength="400" autocomplete="off">
+            <p>Separate names with commas. Custom labels use a more accurate YOLO-World medium model; it downloads on first use and may run slower. Clear the field to use the bundled detector for common objects.</p>
+        </div>
+
+        <div class="confidence-control">
+            <label for="confidence-threshold">Minimum confidence <output id="confidence-value" for="confidence-threshold">50%</output></label>
+            <input id="confidence-threshold" type="range" min="0.25" max="0.85" step="0.05" value="0.5" aria-describedby="confidence-help">
+            <p id="confidence-help">Raise this to filter uncertain detections; lower it if objects are being missed. Higher image resolution may make detection slower.</p>
+        </div>
+
+        <!-- Information Cards -->
+        <div class="info-grid">
+
+            <div class="info-card">
+                <div class="info-icon">◎</div>
+                <h3>Camera Status</h3>
+                <p id="camera-card-status">Off</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">✦</div>
+                <h3>Detection Mode</h3>
+                <p id="detection-card-status">Inactive</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">◈</div>
+                <h3>AI Model</h3>
+                <p>YOLOv8 / YOLO-World</p>
+            </div>
+
+        </div>
+
+
+        <!-- Instructions -->
+        <div class="instruction-box">
+
+            <h2>How to Use</h2>
+
+            <div class="instruction-list">
+
+                <div class="instruction">
+                    <span>01</span>
+                    <p>Run pip install -r requirements.txt, then python object.py. Open http://127.0.0.1:5000/detector.html.</p>
+                </div>
+
+                <div class="instruction">
+                    <span>02</span>
+                    <p>Allow camera access when your browser asks.</p>
+                </div>
+
+                <div class="instruction">
+                    <span>03</span>
+                    <p>Keep the target objects as phone, pen, or enter other names separated by commas.</p>
+                </div>
+
+                <div class="instruction">
+                    <span>04</span>
+                    <p>View detected objects and bounding boxes.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="detector.js" defer></script>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About ObjectDetect AI</h2>
+
+        <p>
+            ObjectDetect AI is a computer vision project that uses
+            YOLO technology to recognize and identify objects
+            through a live camera stream.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <!-- <footer>
+        <p>© 2026 ObjectDetect AI. All Rights Reserved.</p>
+    </footer> -->
+
+</body>
+</html>
