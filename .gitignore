@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# YOLO model weights
+*.pt
+*.onnx
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# Environment variables
+.env
+
+# Python testing
+.pytest_cache/
+
+# Temporary files
+*.tmp
